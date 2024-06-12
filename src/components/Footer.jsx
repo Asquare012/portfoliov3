@@ -46,8 +46,8 @@ const Footer = () => {
         <br />
         <p className="Copyright">
           © Hassan Abass Asquare{" "}
-          <span style={{ color: "#F1B739", fontWeight: 600 }}>{y}</span>. All
-          rights reserved.
+          <span style={{ color: "#F1B739", fontWeight: 600 }}>{y}</span>.<br />{" "}
+          All rights reserved.
         </p>
       </div>
     </div>
