@@ -3,6 +3,7 @@ import linkdn from "./home/images/linkdn.png";
 import github from "./home/images/github.png";
 import x from "./home/images/x.png";
 import ig from "./home/images/ig.png";
+import FooterForm from "./FooterForm";
 
 const Footer = () => {
   return (
@@ -10,9 +11,16 @@ const Footer = () => {
       <div className="Footer-Left">
         <div className="Left-First">LET`S CONNECT</div>
         <div className="Left-Second">
-          Say hello at abass.hassan.7798@gmail.com
+          Say hello at{" "}
+          <span style={{ color: "#F1B739", fontWeight: 600 }}>
+            abass.hassan.7798@gmail.com
+          </span>
           <br />
-          For more info, here`s my resume
+          For more info,
+          <span style={{ color: "#039e03", fontWeight: 600 }}>
+            {" "}
+            here`s my resume
+          </span>
         </div>
         <div className="Left-Third">
           <ol>
@@ -31,7 +39,9 @@ const Footer = () => {
           </ol>
         </div>
       </div>
-      <div className="Footer-Right"></div>
+      <div className="Footer-Right">
+        <FooterForm />
+      </div>
     </div>
   );
 };

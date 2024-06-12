@@ -1,0 +1,70 @@
+.FooterForm {
+    height: 100%;
+
+    form {
+        height: 100%;
+
+        label {
+            .Input-Title {
+                display: block;
+                font-weight: 700;
+            }
+
+            input {
+                margin: 5px 0 20px 0;
+                height: 40px;
+                width: 80%;
+                background-color: #484848;
+                border: none;
+                outline: none;
+                color: #ffffff;
+                font-weight: 600;
+                padding-left: 1%;
+            }
+
+            textarea {
+                height: 120px;
+                width: 80%;
+                background-color: #484848;
+                border: none;
+                outline: none;
+                margin-top: 5px;
+            }
+        }
+
+        button {
+            margin-top: 30px;
+            height: 30px;
+            width: 30%;
+            min-width: 120px;
+            border-radius: 25px;
+            border: none;
+            outline: none;
+            background-color: #F1B739;
+            color: #0A0A0A;
+            font-weight: 600;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 1.2px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #bd860f;
+                color: #ffffff;
+            }
+
+            &:active {
+                background-color: #f1b739;
+            }
+        }
+
+        .Status {
+            margin-bottom: 20px;
+            font-size: 22px;
+            font-weight: 800;
+            color: #039e03;
+        }
+    }
+}
