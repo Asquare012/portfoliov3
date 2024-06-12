@@ -1,0 +1,196 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Project {
+    padding: 60px 6%;
+    border-bottom: 1px solid #484848;
+
+    .Project-Top {
+        height: 150px;
+
+        .Top-Title {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 50px;
+            color: #ffffff;
+        }
+
+        .Top-Subtitle {
+            line-height: 28px;
+        }
+    }
+
+    .Project-Bottom {
+        ol {
+            display: flex;
+            flex-direction: column;
+            gap: 100px;
+
+            li {
+                height: 370px;
+                list-style: none;
+                display: flex;
+
+                .Item-Img {
+                    width: 50%;
+                    height: 100%;
+                    background-color: #1A1A1A;
+                    border-radius: 25px;
+                    @include flex;
+
+                    img {
+                        border-radius: 25px;
+                    }
+                }
+
+                .Item-Content {
+                    width: 50%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0 2% 0 3%;
+                    gap: 20px;
+                    font-size: 15px;
+
+                    .Content-Top {
+                        span {
+                            font-size: 24px;
+                            display: block;
+                            font-weight: 500;
+                            color: #ffffff;
+                            padding-bottom: 15px;
+                        }
+                    }
+
+                    .Content-Mid {
+                        div {
+                            display: flex;
+                            justify-content: space-between;
+                            border-bottom: 1px solid #484848;
+                            padding: 5px 0;
+                        }
+                    }
+
+                    .Content-Bottom {
+
+                        display: flex;
+                        align-items: center;
+
+                        span {
+                            @include flex;
+                            margin-right: 10%;
+                            border-bottom: 2px solid #f1b739;
+                            font-size: 14px;
+                            color: #f1b739;
+                            font-weight: bold;
+
+                            img {
+                                margin-left: 3px;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+// MEDIA QUERIES
+@media screen and (max-width:860px) {
+    .Project {
+
+        .Project-Top {
+            .Top-Title {
+                font-size: 40px;
+            }
+
+            .Top-Subtitle {
+                font-size: 15px;
+            }
+        }
+
+        .Project-Mid {
+            ol {
+                gap: 130px;
+
+                li {
+                    .Item-Img {
+                        img {
+                            width: 80%;
+                        }
+                    }
+
+                    .Item-Content {
+                        padding: 0 0 0 3%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:680px) {
+    .Project {
+        .Project-Top {
+            .Top-Title {
+                font-size: 35px;
+            }
+
+            .Top-Subtitle {
+                font-size: 14px;
+            }
+        }
+
+        .Project-Bottom {
+            ol {
+                gap: 80px;
+
+                li {
+                    flex-direction: column;
+                    height: auto;
+
+                    .Item-Img {
+                        width: 60%;
+                        min-width: 280px;
+                        min-height: 260px;
+
+                        img {
+                            height: 90%;
+                            width: 90%;
+                            min-height: 220px;
+                        }
+                    }
+
+                    .Item-Content {
+                        margin-top: 30px;
+                        width: 100%;
+
+                        .Content-Top {
+                            font-size: 14px;
+
+                            span {
+                                font-size: 23px;
+                            }
+                        }
+
+                        .Content-Mid {
+                            font-size: 15px;
+                        }
+
+                        .Content-Bottom {
+
+                            span {
+                                font-size: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

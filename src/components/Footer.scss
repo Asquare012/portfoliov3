@@ -1,0 +1,63 @@
+.Footer {
+    height: 600px;
+    display: flex;
+    padding: 60px 6%;
+
+
+    .Footer-Left {
+        height: 100%;
+        width: 50%;
+
+        .Left-First {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 50px;
+            color: #ffffff;
+
+        }
+
+        .Left-Second {
+            margin: 15px 0;
+        }
+
+        .Left-Third {
+
+            ol {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 300px;
+
+                li {
+                    list-style: none;
+                }
+            }
+        }
+    }
+
+    .Footer-Right {
+        height: 100%;
+        width: 50%;
+        background-color: #141414;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .Footer {
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+
+        .Footer-Left {
+            width: 100%;
+            height: 30%;
+
+        }
+
+        .Footer-Right {
+            width: 100%;
+            height: 70%;
+
+        }
+    }
+}

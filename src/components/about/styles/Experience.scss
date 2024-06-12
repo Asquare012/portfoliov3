@@ -1,0 +1,107 @@
+.Experience {
+    height: auto;
+    display: flex;
+    padding: 0 6%;
+    border-bottom: 1px solid #484848;
+
+    .Experience-Left {
+        width: 30%;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+
+    .Experience-Right {
+        width: 70%;
+        font-size: 14px;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ol {
+            height: 100%;
+
+            li {
+                list-style: none;
+                height: 250px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                gap: 30px;
+
+                .Item-Top {
+                    font-size: 16px;
+                    gap: 0 !important;
+
+                    span {
+                        font-weight: 600;
+
+                        &:first-child {
+                            width: 70%;
+                        }
+
+                        &:last-child {
+                            width: 30%;
+                        }
+                    }
+                }
+
+                &>div {
+                    &:first-child {
+                        display: flex;
+                        gap: 60%;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:730px) {
+    .Experience {
+        flex-direction: column;
+
+        .Experience-Left {
+            width: 100%;
+            font-size: 45px
+        }
+
+        .Experience-Right {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:730px) {
+    .Experience {
+        padding: 40px 5%;
+        flex-direction: column;
+        height: 370px;
+
+        .Experience-Left {
+            width: 100%;
+            font-size: 45px
+        }
+    }
+}
+
+@media screen and (max-width:350px) {
+    .Experience {
+        .Experience-Right {
+            ol {
+                li {
+                    .Item-Top {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}

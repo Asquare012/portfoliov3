@@ -1,0 +1,100 @@
+.Skills {
+    height: 350px;
+    padding: 0 6%;
+    display: flex;
+    border-bottom: 1px solid #484848;
+
+    .Skills-Left {
+        width: 30%;
+        font-family: "Bebas Neue", sans-serif;
+        font-size: 50px;
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+    }
+
+    .Skills-Right {
+        width: 70%;
+        font-size: 17px;
+        line-height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .Right-Title {
+            height: 20%;
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            font-size: 18px;
+        }
+
+        .Right-Tech {
+            height: 80%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3%;
+
+            &>div {
+                min-width: 90px;
+                height: 35px;
+                display: inline-block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                border: 2px solid #484848;
+                color: #ffffff;
+                font-weight: 600;
+                font-size: 13px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .Skills {
+        flex-direction: column;
+
+        .Skills-Left {
+            font-size: 45px;
+            width: 100%;
+            height: auto;
+        }
+
+        .Skills-Right {
+            width: 100%;
+            height: 250px;
+
+            .Right-Title {
+                font-size: 15px;
+            }
+
+            .Right-Tech {
+                margin-top: 20px;
+
+                &>div {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:552px) {
+    .Skills {
+        padding: 40px 5%;
+
+        .Skills-Right {
+
+            .Right-Tech {
+                grid-template-columns: repeat(3, 1fr);
+
+                &>div {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
