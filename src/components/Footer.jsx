@@ -14,8 +14,18 @@ const Footer = () => {
         <div className="Left-First">LET`S CONNECT</div>
         <div className="Left-Second">
           Say hello at{" "}
-          <span style={{ color: "#F1B739", fontWeight: 600 }}>
-            abass.hassan.7798@gmail.com
+          <span>
+            <a
+              href="mailto:abass.hassan.7798@gmail.com"
+              target="_blank"
+              style={{
+                color: "#F1B739",
+                fontWeight: 600,
+                textDecoration: "none",
+              }}
+            >
+              abass.hassan.7798@gmail.com
+            </a>
           </span>
           <br />
           For more info,
@@ -30,13 +40,19 @@ const Footer = () => {
               <img src={linkdn} alt="linkdn" />
             </li>
             <li>
-              <img src={github} alt="github" />
+              <a href="https://github.com/asquare012" target="_blank">
+                <img src={github} alt="github" />
+              </a>
             </li>
             <li>
-              <img src={x} alt="x" height="24px" />
+              <a href="https://x.com/asquare012" target="_blank">
+                <img src={x} alt="x" height="24px" />
+              </a>
             </li>
             <li>
-              <img src={ig} alt="instagram" height="26px" />
+              <a href="https://instagram.com/asquare012" target="_blank">
+                <img src={ig} alt="instagram" height="26px" />
+              </a>
             </li>
           </ol>
         </div>

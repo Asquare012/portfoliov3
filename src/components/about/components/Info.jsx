@@ -22,7 +22,7 @@ const Info = () => {
           <br />
           <div className="Buttons">
             <button>
-              CONTACT ME
+              RESUME
               <span className="Dot">
                 <img src={arrow} alt="arrow" />
               </span>

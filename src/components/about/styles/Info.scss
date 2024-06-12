@@ -59,13 +59,15 @@
                         color: #1A1A1A;
                         font-weight: 800;
                         letter-spacing: 1.1px;
+                        font-size: 14px;
+                        letter-spacing: 1.2px;
 
                         .Dot {
                             height: 25px;
                             width: 25px;
                             background-color: #1A1A1A;
                             border-radius: 50%;
-                            margin-left: 5%;
+                            margin-left: 25%;
                             @include flex;
                         }
                     }
