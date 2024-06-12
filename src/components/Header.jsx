@@ -16,11 +16,11 @@ const Header = () => {
         <li>
           <NavLink to={"/"}>HASSAN ABASS</NavLink>
         </li>
-        <li>Project</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li onClick={() => window.scrollTo(0, 750)}>Project</li>
+        <li onClick={() => window.scrollTo(0, 2300)}>About</li>
+        <li onClick={() => window.scrollTo(0, 3000)}>Contact</li>
         <li onClick={handleClick}>
-          <img src={Menu ? close : open} alt="hamburger" height="40px" />
+          <img src={Menu ? close : open} alt="hamburger" height="30px" />
         </li>
       </ul>
       <br />

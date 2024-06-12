@@ -1,4 +1,5 @@
 import "./styles/About.scss";
+import { NavLink } from "react-router-dom";
 import me from "./images/me.png";
 
 const About = () => {
@@ -21,7 +22,9 @@ const About = () => {
           find me relaxing with movies or gaming, striking a balance between
           learning and leisure.
           <br />
-          <span className="Right-Link">MORE ABOUT ME</span>
+          <span className="Right-Link">
+            <NavLink to={"/about"}>MORE ABOUT ME</NavLink>
+          </span>
         </div>
       </div>
     </div>

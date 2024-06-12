@@ -52,10 +52,15 @@
 
             .Right-Link {
                 margin-top: 15px;
-                color: #f1b739;
-                font-weight: bold;
+
                 border-bottom: 2px solid #f1b739;
                 align-self: flex-start;
+
+                a {
+                    color: #f1b739;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
             }
         }
     }

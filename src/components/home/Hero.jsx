@@ -3,6 +3,7 @@ import heroImg from "./images/hero.png";
 import linkdn from "./images/linkdn.png";
 import github from "./images/github.png";
 import arrow from "./images/arrow.png";
+
 const Hero = () => {
   return (
     <div className="Hero">
@@ -18,7 +19,7 @@ const Hero = () => {
           to delivering seamless, user-friendly experiences.
         </div>
         <div className="Buttons">
-          <button>
+          <button onClick={() => window.scrollTo(0, 4250)}>
             CONTACT ME
             <span className="Dot">
               <img src={arrow} alt="arrow" />
@@ -28,7 +29,9 @@ const Hero = () => {
             <img src={linkdn} alt="linkdn" />
           </button>
           <button>
-            <img src={github} alt="github" />
+            <a href="https://github.com/asquare012" target="_blank">
+              <img src={github} alt="github" />
+            </a>
           </button>
         </div>
       </div>

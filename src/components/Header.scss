@@ -16,6 +16,16 @@
 
         li {
             list-style: none;
+            cursor: pointer;
+            font-weight: 600;
+
+            &:hover {
+                color: #f1b127;
+            }
+
+            &:active {
+                color: #815b08;
+            }
 
             &:first-child {
                 margin-right: 60%;
@@ -24,6 +34,14 @@
                     font-size: 30px;
                     text-decoration: none;
                     font-family: "Bebas Neue", sans-serif;
+
+                    &:hover {
+                        color: #f1b127;
+                    }
+
+                    &:active {
+                        color: #815b08;
+                    }
                 }
             }
 
