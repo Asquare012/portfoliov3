@@ -6,6 +6,8 @@ import ig from "./home/images/ig.png";
 import FooterForm from "./FooterForm";
 
 const Footer = () => {
+  const d = new Date();
+  const y = d.getFullYear();
   return (
     <div className="Footer">
       <div className="Footer-Left">
@@ -41,6 +43,12 @@ const Footer = () => {
       </div>
       <div className="Footer-Right">
         <FooterForm />
+        <br />
+        <p className="Copyright">
+          © Hassan Abass Asquare{" "}
+          <span style={{ color: "#F1B739", fontWeight: 600 }}>{y}</span>. All
+          rights reserved.
+        </p>
       </div>
     </div>
   );
