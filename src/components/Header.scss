@@ -18,9 +18,13 @@
             list-style: none;
 
             &:first-child {
-                font-family: "Bebas Neue", sans-serif;
-                font-size: 30px;
                 margin-right: 60%;
+
+                a {
+                    font-size: 30px;
+                    text-decoration: none;
+                    font-family: "Bebas Neue", sans-serif;
+                }
             }
 
             &:last-child {
@@ -133,7 +137,10 @@
             li {
                 &:first-child {
                     margin-right: 50%;
-                    font-size: 27px;
+
+                    a {
+                        font-size: 27px;
+                    }
                 }
             }
         }
@@ -146,7 +153,10 @@
             li {
                 &:first-child {
                     margin-right: 49%;
-                    font-size: 23px;
+
+                    a {
+                        font-size: 23px;
+                    }
                 }
             }
         }
@@ -159,7 +169,10 @@
             li {
                 &:first-child {
                     margin-right: 45%;
-                    font-size: 22px;
+
+                    a {
+                        font-size: 22px;
+                    }
                 }
             }
         }

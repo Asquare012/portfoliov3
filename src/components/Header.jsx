@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <div className="Header">
       <ul>
-        <li>HASSAN ABASS</li>
+        <li>
+          <NavLink to={"/"}>HASSAN ABASS</NavLink>
+        </li>
         <li>Project</li>
         <li>About</li>
         <li>Contact</li>

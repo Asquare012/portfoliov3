@@ -2,7 +2,6 @@ import "./styles/Project.scss";
 import ProjectData from "./ProjectData";
 import arrow2 from "./images/arrow2.png";
 import github from "./images/github.png";
-// import test from "../home/images/hero.png";
 
 const Project = () => {
   return (
