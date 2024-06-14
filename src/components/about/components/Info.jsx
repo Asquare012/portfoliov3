@@ -2,6 +2,7 @@ import "../styles/Info.scss";
 import linkdn from "../images/linkdn.png";
 import github from "../images/github.png";
 import arrow from "../images/arrow.png";
+import face from "../images/face.png";
 
 const Info = () => {
   return (
@@ -36,7 +37,9 @@ const Info = () => {
           </div>
         </div>
       </div>
-      <div className="Info-Bottom"></div>
+      <div className="Info-Bottom">
+        <img src={face} alt="face" height="370px" />
+      </div>
     </div>
   );
 };

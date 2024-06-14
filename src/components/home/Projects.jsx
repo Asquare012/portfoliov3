@@ -2,6 +2,7 @@ import "./styles/Project.scss";
 import ProjectData from "./ProjectData";
 import arrow2 from "./images/arrow2.png";
 import github from "./images/github.png";
+import { NavLink } from "react-router-dom";
 // import test from "../home/images/hero.png";
 
 const Project = () => {
@@ -17,7 +18,8 @@ const Project = () => {
       <div className="Project-Bottom">
         <ol>
           {ProjectData.map((project) => {
-            const { id, title, img, description, stack, year } = project;
+            const { id, title, img, description, stack, year, code, live } =
+              project;
             return (
               <li key={id}>
                 <div className="Item-Img">
@@ -44,10 +46,14 @@ const Project = () => {
                   </div>
                   <div className="Content-Bottom">
                     <span>
-                      LIVE DEMO <img src={arrow2} alt="arrow" />
+                      <NavLink to={live} target="_blank">
+                        LIVE DEMO <img src={arrow2} alt="arrow" />
+                      </NavLink>
                     </span>
                     <span>
-                      SEE ON GITHUB <img src={github} alt="github" />
+                      <a href={code} target="_blank">
+                        SEE ON GITHUB <img src={github} alt="github" />
+                      </a>
                     </span>
                   </div>
                 </div>

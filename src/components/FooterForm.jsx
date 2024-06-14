@@ -7,6 +7,8 @@ const FooterForm = () => {
     message: "",
   });
   const [status, setStatus] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,6 +17,7 @@ const FooterForm = () => {
       [name]: value,
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("Sending...");
@@ -29,6 +32,8 @@ const FooterForm = () => {
 
       if (response.ok) {
         setStatus("Message sent!");
+        setModalMessage("Your message has been sent successfully! ✔✔✔");
+        setShowModal(true);
         setFormData({
           name: "",
           email: "",
@@ -36,16 +41,27 @@ const FooterForm = () => {
         });
       } else {
         setStatus("Error sending message.");
+        setModalMessage(
+          "There was an error sending your message. Please try again later."
+        );
+        setShowModal(true);
       }
     } catch (error) {
       setStatus("Error sending message.");
+      setModalMessage(
+        "There was an error sending your message. Please try again later."
+      );
+      setShowModal(true);
     }
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
   };
 
   return (
     <div className="FooterForm">
       <form onSubmit={handleSubmit}>
-        <p className="Status">{status}</p>
         <label>
           <span className="Input-Title"> Name</span>
           <input
@@ -80,6 +96,20 @@ const FooterForm = () => {
         <br />
         <button type="submit">Send</button>
       </form>
+      <span className="Status">{status}</span>
+      {showModal && (
+        <div
+          className="modal"
+          style={{ display: showModal ? "block" : "none" }}
+        >
+          <div className="modal-content">
+            <span className="close" onClick={handleCloseModal}>
+              &times;
+            </span>
+            <p className="Status">{modalMessage}</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

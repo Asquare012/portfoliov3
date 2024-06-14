@@ -16,7 +16,8 @@ const Skills = () => {
           <div>HTML</div>
           <div>FRAMER MOTION</div>
           <div>FIGMA</div>
-          <div>API</div>
+          <div>NPM</div>
+          <div>VS CODE</div>
         </div>
       </div>
     </div>

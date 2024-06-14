@@ -79,17 +79,22 @@
                         align-items: center;
 
                         span {
-                            @include flex;
                             margin-right: 10%;
                             border-bottom: 2px solid #f1b739;
-                            font-size: 14px;
-                            color: #f1b739;
-                            font-weight: bold;
+                            cursor: pointer;
+
+                            a {
+                                @include flex;
+                                font-size: 14px;
+                                color: #f1b739;
+                                font-weight: bold;
+                                text-decoration: none;
+
+                            }
 
                             img {
                                 margin-left: 3px;
                             }
-
                         }
                     }
                 }
@@ -183,7 +188,11 @@
 
                         .Content-Bottom {
                             span {
-                                font-size: 11px;
+                                a {
+                                    font-size: 13px;
+                                    color: #f1b739;
+                                    font-weight: bold;
+                                }
                             }
                         }
                     }
